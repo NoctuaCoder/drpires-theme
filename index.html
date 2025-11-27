@@ -4,322 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Pires - Tema WordPress Premium para Psicologia</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #2D5F4C 0%, #4A8B6F 100%);
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 40px;
-            background: white;
-            color: #2D5F4C;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            margin: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            border: 2px solid white;
-            color: white;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-card h3 {
-            color: #2D5F4C;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        .screenshot {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            margin: 40px 0;
-        }
-
-        .screenshot img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #2D5F4C;
-            margin-bottom: 20px;
-        }
-
-        .install-steps {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            margin: 40px 0;
-        }
-
-        .install-steps ol {
-            margin-left: 20px;
-        }
-
-        .install-steps li {
-            margin: 15px 0;
-            font-size: 1.1rem;
-        }
-
-        .code-block {
-            background: #2D3748;
-            color: #A8D5BA;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            overflow-x: auto;
-        }
-
-        footer {
-            background: #2D5F4C;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #10B981;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin: 5px;
-        }
-    </style>
+    <title>Dr. Pires - Psicologia Clínica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="hero">
-        <h1>🧠 Dr. Pires Theme</h1>
-        <p>Tema WordPress Premium para Psicologia Clínica</p>
-        <div>
-            <a href="https://github.com/NoctuaCoder/drpires-theme/archive/refs/heads/main.zip" class="btn">📥 Download
-                Tema</a>
-            <a href="https://github.com/NoctuaCoder/drpires-theme" class="btn btn-secondary">📂 Ver no GitHub</a>
-        </div>
-        <div style="margin-top: 20px;">
-            <span class="badge">WordPress 5.0+</span>
-            <span class="badge">PHP 7.4+</span>
-            <span class="badge">Responsivo</span>
-            <span class="badge">Auto-Update</span>
-        </div>
-    </div>
 
-    <div class="container">
-        <h2>✨ Características Premium</h2>
-        <div class="features">
-            <div class="feature-card">
-                <h3>🎨 Design Profissional</h3>
-                <p>Layout clean e moderno com paleta de cores verde elegante, ideal para psicólogos clínicos.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Supere a Paralisia da <i>Ansiedade Crônica</i></h1>
+                <p>Recupere o controle da sua vida e encontre o equilíbrio emocional com um acompanhamento especializado
+                    e acolhedor.</p>
+                <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20que%20vi%20no%20site."
+                    class="btn btn-primary" target="_blank">
+                    Agende Sua Consulta (WhatsApp)
+                </a>
             </div>
-
-            <div class="feature-card">
-                <h3>📝 Blog Integrado</h3>
-                <p>Custom Post Type "Artigos" com taxonomia personalizada para categorias de conteúdo.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>📱 100% Responsivo</h3>
-                <p>Funciona perfeitamente em desktop, tablet e mobile com design adaptativo.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>⚙️ Customizer Integrado</h3>
-                <p>Configure WhatsApp, email, CRP e endereço direto no WordPress Customizer.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>🔄 Auto-Update GitHub</h3>
-                <p>Sistema de atualização automática integrado com GitHub Releases.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>🔒 Seguro & Otimizado</h3>
-                <p>Código sanitizado, escapado e seguindo WordPress Coding Standards.</p>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Dr. Pires - Psicólogo">
             </div>
         </div>
+    </section>
 
-        <h2 style="margin-top: 80px;">📸 Preview do Tema</h2>
-        <div class="screenshot">
-            <img src="screenshot.png" alt="Preview do Tema Dr. Pires"
-                onerror="this.src='https://via.placeholder.com/1200x900/2D5F4C/FFFFFF?text=Dr.+Pires+Theme+Preview'">
-            <p style="text-align: center; margin-top: 20px; color: #666;">Landing page profissional com seções Hero,
-                Sobre, Especialidades e Blog</p>
-        </div>
-
-        <h2>🚀 Instalação Rápida</h2>
-        <div class="install-steps">
-            <h3>Método 1: Via Admin do WordPress (Recomendado)</h3>
-            <ol>
-                <li>Baixe o tema: <a
-                        href="https://github.com/NoctuaCoder/drpires-theme/archive/refs/heads/main.zip">Download ZIP</a>
-                </li>
-                <li>No WordPress, vá em <strong>Aparência → Temas → Adicionar Novo</strong></li>
-                <li>Clique em <strong>Enviar Tema</strong></li>
-                <li>Escolha o arquivo ZIP baixado</li>
-                <li>Clique em <strong>Instalar Agora</strong> e depois <strong>Ativar</strong></li>
-            </ol>
-
-            <h3 style="margin-top: 40px;">Método 2: Via FTP</h3>
-            <ol>
-                <li>Extraia o arquivo ZIP</li>
-                <li>Faça upload da pasta <code>drpires-theme</code> para <code>/wp-content/themes/</code></li>
-                <li>Ative o tema em <strong>Aparência → Temas</strong></li>
-            </ol>
-        </div>
-
-        <h2>⚙️ Configuração</h2>
-        <div class="install-steps">
-            <h3>1. Configurar Informações de Contato</h3>
-            <p>Vá em <strong>Aparência → Personalizar → Informações de Contato</strong> e configure:</p>
-            <ul style="margin: 15px 0 15px 40px;">
-                <li>Número do WhatsApp</li>
-                <li>E-mail</li>
-                <li>Número do CRP</li>
-                <li>Endereço</li>
-            </ul>
-
-            <h3 style="margin-top: 30px;">2. Criar Artigos do Blog</h3>
-            <p>Vá em <strong>Artigos → Adicionar Novo</strong> para criar posts do blog.</p>
-
-            <h3 style="margin-top: 30px;">3. Configurar Menus</h3>
-            <p>Em <strong>Aparência → Menus</strong>, crie menus para Primary e Footer.</p>
-        </div>
-
-        <h2>📁 Estrutura de Arquivos</h2>
-        <div class="code-block">
-            drpires-theme/
-            ├── style.css # Estilos principais + header do tema
-            ├── functions.php # Funções e configurações
-            ├── header.php # Cabeçalho do site
-            ├── footer.php # Rodapé do site
-            ├── front-page.php # Template da landing page
-            ├── index.php # Loop principal (blog)
-            ├── single.php # Template de artigo individual
-            ├── page.php # Template de páginas
-            ├── screenshot.png # Preview do tema (1200x900)
-            ├── updater.php # Sistema de auto-update GitHub
-            └── README.md # Documentação completa
-        </div>
-
-        <h2>🎯 Custom Post Types</h2>
-        <div class="install-steps">
-            <h3>Artigos</h3>
-            <ul style="margin: 15px 0 15px 40px;">
-                <li><strong>Slug:</strong> artigos</li>
-                <li><strong>Taxonomia:</strong> categoria_artigo</li>
-                <li><strong>Suporta:</strong> title, editor, excerpt, thumbnail</li>
-                <li><strong>Ícone:</strong> dashicons-welcome-learn-more</li>
-            </ul>
-        </div>
-
-        <h2>🎨 Paleta de Cores</h2>
-        <div class="features">
-            <div class="feature-card" style="background: #2D5F4C; color: white;">
-                <h3>Primary Green</h3>
-                <p>#2D5F4C</p>
+    <!-- Authority Section (Mini Blog) -->
+    <section class="section authority">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conteúdo para Sua Saúde Mental</h2>
+                <p>Artigos e reflexões para ajudar na sua jornada.</p>
             </div>
-            <div class="feature-card" style="background: #4A8B6F; color: white;">
-                <h3>Secondary Green</h3>
-                <p>#4A8B6F</p>
-            </div>
-            <div class="feature-card" style="background: #A8D5BA;">
-                <h3>Light Green</h3>
-                <p>#A8D5BA</p>
-            </div>
-            <div class="feature-card" style="background: #10B981; color: white;">
-                <h3>Accent Emerald</h3>
-                <p>#10B981</p>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <h3>Como identificar o Burnout?</h3>
+                        <p>Sinais físicos e emocionais que indicam que você precisa desacelerar agora mesmo.</p>
+                        <a href="#" class="read-more">Ler artigo completo →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <h3>A importância do sono na ansiedade</h3>
+                        <p>Entenda a relação direta entre a qualidade do seu sono e seus níveis de estresse.</p>
+                        <a href="#" class="read-more">Ler artigo completo →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <h3>Luto: Um processo necessário</h3>
+                        <p>Como lidar com a perda e transformar a dor em saudade saudável.</p>
+                        <a href="#" class="read-more">Ler artigo completo →</a>
+                    </div>
+                </article>
             </div>
         </div>
+    </section>
 
-        <h2 style="margin-top: 60px;">📄 Licença</h2>
-        <div class="install-steps">
-            <p style="text-align: center; font-size: 1.1rem;">
-                <strong>MIT License</strong> - Livre para uso pessoal e comercial
-            </p>
+    <!-- Methods Section -->
+    <section class="section methods">
+        <div class="container methods-content">
+            <div class="methods-text">
+                <h2>Minha Abordagem</h2>
+                <p>Utilizo a Terapia Cognitivo-Comportamental (TCC) aliada a técnicas de Mindfulness para proporcionar
+                    resultados práticos e duradouros. O foco é entender seus padrões de pensamento e criar estratégias
+                    reais para o dia a dia.</p>
+                <div class="highlight-box">
+                    Atendimento Particular e Personalizado (Não atendo convênios)
+                </div>
+            </div>
+            <div class="methods-visual">
+                <img src="https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Ambiente de consulta acolhedor" style="border-radius: 12px; opacity: 0.9;">
+            </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Social Proof -->
+    <section class="section social-proof">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que dizem meus pacientes</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"O Dr. Pires me ajudou a enxergar a vida de outra forma. A ansiedade não
+                        me paralisa mais."</p>
+                    <p class="client-name">- Maria S., Executiva</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Profissional excelente, muito atencioso e com uma abordagem que
+                        realmente funciona."</p>
+                    <p class="client-name">- João P., Engenheiro</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Me senti acolhida desde a primeira sessão. Recomendo para todos que
+                        buscam autoconhecimento."</p>
+                    <p class="client-name">- Ana C., Professora</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <h3>👨‍💻 Desenvolvido por NoctuaCoder</h3>
-        <p style="margin: 20px 0;">
-            <a href="https://github.com/NoctuaCoder" style="color: #A8D5BA; text-decoration: none;">GitHub</a> |
-            <a href="https://github.com/NoctuaCoder/drpires-theme"
-                style="color: #A8D5BA; text-decoration: none;">Repositório</a> |
-            <a href="https://github.com/NoctuaCoder/drpires-theme/issues"
-                style="color: #A8D5BA; text-decoration: none;">Suporte</a>
-        </p>
-        <p>&copy; 2025 Dr. Pires Theme. Todos os direitos reservados.</p>
+        <div class="container footer-content">
+            <h2>Pronto para dar o primeiro passo?</h2>
+            <p>Entre em contato e agende sua consulta.</p>
+            <div class="footer-links">
+                <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+                <a href="mailto:contato@drpires.com.br">E-mail</a>
+            </div>
+            <div class="legal">
+                <p>&copy; 2025 Dr. Pires - Psicologia Clínica. Todos os direitos reservados.</p>
+                <p>CRP 06/123456 | Emitimos nota fiscal para reembolso</p>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
