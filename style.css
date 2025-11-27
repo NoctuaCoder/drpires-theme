@@ -1,0 +1,451 @@
+/*
+Theme Name: Dr. Pires - Psicologia Clínica
+Theme URI: https://github.com/NoctuaCoder/drpires-theme
+Author: NoctuaCoder
+Author URI: https://github.com/NoctuaCoder
+Description: Tema WordPress elegante e profissional para psicólogos clínicos. Design minimalista com paleta de cores quentes e acolhedoras, ideal para profissionais de saúde mental.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: drpires-theme
+Tags: psychology, health, professional, minimal, elegant, responsive
+*/
+
+:root {
+    /* Palette - Boutique Medical (Warm, Elegant, Trustworthy) */
+    --primary-color: #4a3f35;
+    /* Dark Brown/Grey - Text & Headings */
+    --secondary-color: #8c7b6c;
+    /* Muted Earth Tone */
+    --accent-color: #d3c2a9;
+    /* Soft Gold/Beige - Buttons & Highlights */
+    --accent-hover: #c4b095;
+    --background-light: #fcfaf8;
+    /* Warm Off-White */
+    --background-alt: #f4f1ed;
+    /* Slightly darker warm grey for sections */
+    --white: #ffffff;
+    --text-body: #595959;
+    /* Softer dark grey for reading */
+
+    /* Spacing - More breathing room */
+    --spacing-xs: 0.75rem;
+    --spacing-sm: 1.5rem;
+    --spacing-md: 3rem;
+    --spacing-lg: 6rem;
+    --spacing-xl: 10rem;
+
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    /* UI Elements */
+    --border-radius: 4px;
+    /* Sharper, more classic corners */
+    --shadow-soft: 0 10px 40px -10px rgba(74, 63, 53, 0.1);
+    --shadow-hover: 0 20px 40px -10px rgba(74, 63, 53, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    background-color: var(--background-light);
+    line-height: 1.8;
+    /* Increased line-height for elegance */
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    line-height: 1.3;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 400;
+    /* Lighter weight for elegance */
+}
+
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Utilities */
+.container {
+    max-width: 1100px;
+    /* Slightly narrower for reading comfort */
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    border-radius: 2px;
+    /* Minimalist button shape */
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-light);
+    position: relative;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.hero-text h1 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-text h1 i {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+    max-width: 480px;
+}
+
+.hero-image img {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    filter: sepia(10%);
+    /* Warm tone filter */
+}
+
+/* Authority Section (Mini Blog) */
+.authority {
+    background-color: var(--white);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.blog-card {
+    background: transparent;
+    border: none;
+    transition: transform 0.4s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-content {
+    padding: var(--spacing-sm) 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.read-more {
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+}
+
+.read-more:hover {
+    border-bottom-color: var(--secondary-color);
+}
+
+/* Methods Section */
+.methods {
+    background-color: var(--background-alt);
+}
+
+.methods-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.highlight-box {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    font-family: var(--font-heading);
+    font-style: italic;
+    text-align: center;
+}
+
+/* Social Proof */
+.social-proof {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.testimonial-card {
+    background: var(--background-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.testimonial-text {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+.client-name {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+    text-align: center;
+}
+
+.footer-content h2 {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-links {
+    margin: var(--spacing-md) 0;
+}
+
+.footer-links a {
+    margin: 0 var(--spacing-sm);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.legal {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-md);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.legal p {
+    margin: 0.5rem 0;
+}
+
+/* WordPress Specific Styles */
+.wp-block-image img {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+}
+
+.alignleft {
+    float: left;
+    margin-right: var(--spacing-sm);
+}
+
+.alignright {
+    float: right;
+    margin-left: var(--spacing-sm);
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* WordPress Navigation */
+.main-navigation {
+    background-color: var(--white);
+    padding: var(--spacing-sm) 0;
+    box-shadow: var(--shadow-soft);
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.main-navigation a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.main-navigation a:hover {
+    color: var(--secondary-color);
+}
+
+/* WordPress Posts */
+.post {
+    margin-bottom: var(--spacing-lg);
+}
+
+.entry-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.entry-title {
+    margin-bottom: var(--spacing-sm);
+}
+
+.entry-meta {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.entry-content {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    :root {
+        --spacing-lg: 4rem;
+        --spacing-xl: 6rem;
+    }
+
+    .hero-content,
+    .methods-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: var(--spacing-md);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .main-navigation ul {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
