@@ -12,21 +12,21 @@ Tags: psychology, health, professional, minimal, elegant, responsive
 */
 
 :root {
-    /* Palette - Boutique Medical (Warm, Elegant, Trustworthy) */
-    --primary-color: #4a3f35;
-    /* Dark Brown/Grey - Text & Headings */
-    --secondary-color: #8c7b6c;
-    /* Muted Earth Tone */
-    --accent-color: #d3c2a9;
-    /* Soft Gold/Beige - Buttons & Highlights */
-    --accent-hover: #c4b095;
-    --background-light: #fcfaf8;
-    /* Warm Off-White */
-    --background-alt: #f4f1ed;
-    /* Slightly darker warm grey for sections */
+    /* Palette - Green Psychology Theme (Professional, Calming, Natural) */
+    --primary-color: #2D5F4C;
+    /* Deep Forest Green - Text & Headings */
+    --secondary-color: #4A8B6F;
+    /* Medium Green */
+    --accent-color: #10B981;
+    /* Vibrant Emerald - Buttons & Highlights */
+    --accent-hover: #059669;
+    --background-light: #F0FDF4;
+    /* Very Light Green */
+    --background-alt: #DCFCE7;
+    /* Light Green for sections */
     --white: #ffffff;
-    --text-body: #595959;
-    /* Softer dark grey for reading */
+    --text-body: #374151;
+    /* Dark grey for reading */
 
     /* Spacing - More breathing room */
     --spacing-xs: 0.75rem;
