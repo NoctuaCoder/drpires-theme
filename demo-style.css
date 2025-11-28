@@ -892,12 +892,75 @@ body.dark-mode .nav-brand a {
 
 /* Hero Section */
 .hero {
+    position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    position: relative;
-    overflow: hidden;
     padding: var(--spacing-2xl) 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--light-color) 0%, var(--white) 100%);
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.1;
+}
+
+/* Make "Saúde Mental" REALLY stand out */
+.hero-title .gradient-text {
+    display: inline-block;
+    font-size: 1.2em;
+    /* 20% larger than rest of title */
+    font-weight: 800;
+    /* Extra bold */
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 4s ease infinite;
+    text-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+    letter-spacing: -0.03em;
+    position: relative;
+}
+
+@keyframes gradientFlow {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Glow effect for "Saúde Mental" */
+.hero-title .gradient-text::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: blur(20px);
+    opacity: 0.5;
+}
+
+/* Dark Mode - Even MORE prominent */
+body.dark-mode .hero-title .gradient-text {
+    background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 50%, #06B6D4 100%);
+    background-size: 200% 200%;
+    text-shadow:
+        0 0 30px rgba(96, 165, 250, 0.6),
+        0 0 60px rgba(59, 130, 246, 0.4),
+        0 4px 8px rgba(0, 0, 0, 0.8);
+    filter: drop-shadow(0 0 20px rgba(96, 165, 250, 0.5));
 }
 
 .hero-background {
