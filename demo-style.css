@@ -1499,6 +1499,26 @@ body.dark-mode .hero-title .gradient-text {
     margin-bottom: var(--spacing-md);
 }
 
+/* Einstein Logo Badge */
+.einstein-badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: var(--spacing-xs);
+    vertical-align: middle;
+    transition: var(--transition-normal);
+}
+
+.einstein-logo {
+    height: 32px;
+    width: auto;
+    transition: var(--transition-normal);
+}
+
+.einstein-badge:hover .einstein-logo {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
 .features-list {
     margin: var(--spacing-lg) 0;
     display: flex;
