@@ -1585,7 +1585,7 @@ body.dark-mode .hero-title .gradient-text {
 
 /* Contato Section */
 .contato {
-    background: linear-gradient(135deg, #0F1F3D 0%, #1E3A8A 50%, #0F1F3D 100%);
+    background: linear-gradient(135deg, #020617 0%, #0F1F3D 50%, #020617 100%);
     color: var(--white);
     position: relative;
     overflow: hidden;
