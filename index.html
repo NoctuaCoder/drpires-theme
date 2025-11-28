@@ -17,6 +17,36 @@
 
 <body>
 
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="#home">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                    <span>Psicologia Clínica</span>
+                </a>
+            </div>
+
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li><a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+                        class="btn btn-small btn-primary" target="_blank">Agendar</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="whatsapp-float"
         target="_blank" aria-label="WhatsApp">
@@ -34,7 +64,7 @@
     </button>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-background">
             <div class="gradient-orb orb-1"></div>
             <div class="gradient-orb orb-2"></div>
@@ -85,7 +115,7 @@
     </section>
 
     <!-- Especialidades Section -->
-    <section class="section especialidades">
+    <section class="section especialidades" id="especialidades">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">Áreas de Atuação</span>
@@ -222,7 +252,7 @@
     </section>
 
     <!-- Depoimentos Section -->
-    <section class="section depoimentos">
+    <section class="section depoimentos" id="depoimentos">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">Depoimentos</span>
