@@ -1484,7 +1484,7 @@ body.dark-mode .hero-title .gradient-text {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to top, rgba(45, 95, 76, 0.8), transparent);
+    background: linear-gradient(to top, rgba(30, 58, 138, 0.8), transparent);
 }
 
 .sobre-text .lead {
