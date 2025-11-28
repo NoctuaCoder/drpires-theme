@@ -1582,8 +1582,22 @@ body.dark-mode .hero-title .gradient-text {
 
 /* Contato Section */
 .contato {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #0F1F3D 0%, #1E3A8A 50%, #0F1F3D 100%);
     color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle overlay for depth */
+.contato::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at top right, rgba(30, 58, 138, 0.3) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .contato-content {
