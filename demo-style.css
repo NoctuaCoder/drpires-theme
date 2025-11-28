@@ -409,8 +409,21 @@ h3 {
     text-decoration: none;
     color: var(--primary-color);
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 1.35rem; /* Larger for prominence */
     font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow in light mode */
+    transition: var(--transition);
+}
+
+.nav-brand a:hover {
+    transform: scale(1.02);
+}
+
+/* Dark Mode - Make brand POP */
+body.dark-mode .nav-brand a {
+    color: #FFFFFF;
+    text-shadow: 0 0 20px rgba(96, 165, 250, 0.6), 0 2px 4px rgba(0, 0, 0, 0.8); /* Glow effect */
+    font-weight: 800;
 }
 
 .nav-brand svg {
