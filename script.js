@@ -334,3 +334,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// Mobile Sticky CTA - Show after scroll
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileCTA = document.getElementById('mobileCTA');
+    const footer = document.querySelector('.footer');
+
+    if (mobileCTA && window.innerWidth <= 640) {
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', debounce(() => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const footerTop = footer.offsetTop;
+            const windowHeight = window.innerHeight;
+
+            // Show CTA after scrolling 300px
+            if (scrollTop > 300) {
+                mobileCTA.classList.add('visible');
+                document.body.classList.add('sticky-cta-visible');
+            } else {
+                mobileCTA.classList.remove('visible');
+                document.body.classList.remove('sticky-cta-visible');
+            }
+
+            // Hide CTA when near footer
+            if (scrollTop + windowHeight >= footerTop - 50) {
+                mobileCTA.classList.remove('visible');
+            }
+
+            lastScroll = scrollTop;
+        }, 100));
+    }
+});
