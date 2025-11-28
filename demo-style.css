@@ -69,19 +69,39 @@
 }
 
 /* Dark Mode Variables */
+/* Dark Mode Variables */
 body.dark-mode {
     --bg-body: #0F172A;
     --bg-card: #1E293B;
-    --text-main: #F1F5F9;
-    --text-muted: #94A3B8;
+    --text-main: #FFFFFF;
+    /* Pure White for max contrast */
+    --text-muted: #E2E8F0;
+    /* Lighter Gray (Slate 200) for better readability */
     --gray-100: #1E293B;
     --white: #1E293B;
     /* Re-map white to dark card bg for compatibility */
-    --dark: #F1F5F9;
+    --dark: #FFFFFF;
+    /* Override dark text to white */
 
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Make headings pop in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #FFFFFF;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Text shadow to make letters stand out */
+}
+
+body.dark-mode p {
+    color: #E2E8F0;
 }
 
 * {
