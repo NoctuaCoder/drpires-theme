@@ -1,15 +1,22 @@
 :root {
-    /* Modern Green Palette - Sophisticated & Premium */
-    --primary-green: #2D5F4C;
-    /* Deep Forest Green */
-    --secondary-green: #4A8B6F;
-    /* Sage Green */
-    --accent-green: #6FB894;
-    /* Mint Green */
-    --light-green: #A8D5BA;
-    /* Soft Mint */
-    --emerald: #10B981;
-    /* Vibrant Emerald */
+    /* Modern Blue Palette - Medical & Trustworthy */
+    --primary-blue: #1E3A8A;
+    /* Deep Royal Blue */
+    --secondary-blue: #3B82F6;
+    /* Bright Blue */
+    --accent-blue: #60A5FA;
+    /* Sky Blue */
+    --light-blue: #DBEAFE;
+    /* Pale Blue */
+    --cyan: #06B6D4;
+    /* Vibrant Cyan */
+
+    /* Theme Variables (Mapped to Palette) */
+    --primary-color: var(--primary-blue);
+    --secondary-color: var(--secondary-blue);
+    --accent-color: var(--accent-blue);
+    --light-color: var(--light-blue);
+    --highlight-color: var(--cyan);
 
     /* Neutrals */
     --dark: #1A1A1A;
@@ -19,11 +26,15 @@
     --gray-300: #D1D1D1;
     --gray-100: #F5F5F5;
     --white: #FFFFFF;
+    --bg-body: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --text-main: #2D2D2D;
+    --text-muted: #6B6B6B;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #2D5F4C 0%, #4A8B6F 100%);
-    --gradient-accent: linear-gradient(135deg, #6FB894 0%, #10B981 100%);
-    --gradient-soft: linear-gradient(135deg, rgba(109, 184, 148, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+    --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--secondary-blue) 0%, var(--cyan) 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -38,10 +49,10 @@
     --font-display: 'Playfair Display', Georgia, serif;
 
     /* Effects */
-    --shadow-sm: 0 2px 8px rgba(45, 95, 76, 0.08);
-    --shadow-md: 0 4px 16px rgba(45, 95, 76, 0.12);
-    --shadow-lg: 0 8px 32px rgba(45, 95, 76, 0.16);
-    --shadow-xl: 0 16px 48px rgba(45, 95, 76, 0.24);
+    --shadow-sm: 0 2px 8px rgba(30, 58, 138, 0.08);
+    --shadow-md: 0 4px 16px rgba(30, 58, 138, 0.12);
+    --shadow-lg: 0 8px 32px rgba(30, 58, 138, 0.16);
+    --shadow-xl: 0 16px 48px rgba(30, 58, 138, 0.24);
 
     --blur-sm: 8px;
     --blur-md: 16px;
@@ -57,6 +68,22 @@
     --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-body: #0F172A;
+    --bg-card: #1E293B;
+    --text-main: #F1F5F9;
+    --text-muted: #94A3B8;
+    --gray-100: #1E293B;
+    --white: #1E293B;
+    /* Re-map white to dark card bg for compatibility */
+    --dark: #F1F5F9;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,12 +96,156 @@ html {
 
 body {
     font-family: var(--font-primary);
-    color: var(--gray-900);
-    background-color: var(--white);
+    color: var(--text-main);
+    background-color: var(--bg-body);
     line-height: 1.7;
     font-size: 16px;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Update color references to use new theme variables */
+.hero-badge,
+.section-badge {
+    background: rgba(59, 130, 246, 0.1);
+    /* Blue tint */
+    color: var(--secondary-color);
+}
+
+.gradient-text {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+body.dark-mode .btn-secondary {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card,
+.blog-card,
+.testimonial-card,
+.faq-item,
+.timeline-content {
+    background: var(--bg-card);
+}
+
+.card-icon {
+    background: var(--gradient-soft);
+    color: var(--primary-color);
+}
+
+.timeline-marker {
+    background: var(--secondary-color);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    border-radius: 50%;
+}
+
+.theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Partners Section */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+    align-items: center;
+    justify-items: center;
+    margin-top: var(--spacing-lg);
+}
+
+.partner-item {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-md);
+    transition: var(--transition);
+    opacity: 0.7;
+}
+
+.partner-item:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.partner-logo {
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Dark Mode Specific Overrides */
+body.dark-mode .nav-link {
+    color: var(--text-main);
+}
+
+body.dark-mode .nav-link:hover {
+    color: var(--accent-color);
+}
+
+body.dark-mode .footer {
+    background: #0B1120;
+    /* Darker footer */
+    color: var(--gray-300);
+}
+
+body.dark-mode .bg-light {
+    background: #1E293B;
+    /* Dark card bg */
+}
+
+body.dark-mode .hero-subtitle,
+body.dark-mode .section-header p,
+body.dark-mode .lead {
+    color: var(--text-muted);
+}
+
 
 .container {
     max-width: 1200px;
