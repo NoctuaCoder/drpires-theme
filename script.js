@@ -1,5 +1,5 @@
 // Scroll Animations (AOS - Animate On Scroll)
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize AOS
     const observerOptions = {
         threshold: 0.1,
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Back to Top Button
     const backToTop = document.querySelector('.back-to-top');
-    
+
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 300) {
             backToTop.classList.add('visible');
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const parallaxElements = document.querySelectorAll('.gradient-orb');
-        
+
         parallaxElements.forEach((el, index) => {
             const speed = 0.5 + (index * 0.1);
             el.style.transform = `translateY(${scrolled * speed}px)`;
@@ -77,13 +77,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Card Hover Effect Enhancement
     const cards = document.querySelectorAll('.card, .testimonial-card');
-    
+
     cards.forEach(card => {
-        card.addEventListener('mouseenter', function(e) {
+        card.addEventListener('mouseenter', function (e) {
             this.style.transform = 'translateY(-8px) scale(1.02)';
         });
-        
-        card.addEventListener('mouseleave', function(e) {
+
+        card.addEventListener('mouseleave', function (e) {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const text = heroTitle.innerHTML;
         heroTitle.innerHTML = '';
         let i = 0;
-        
+
         function typeWriter() {
             if (i < text.length) {
                 heroTitle.innerHTML += text.charAt(i);
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(typeWriter, 50);
             }
         }
-        
+
         // Uncomment to enable typing effect
         // setTimeout(typeWriter, 500);
     }
@@ -141,8 +141,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // WhatsApp Float Button Interaction
     const whatsappFloat = document.querySelector('.whatsapp-float');
-    
-    whatsappFloat.addEventListener('mouseenter', function() {
+
+    whatsappFloat.addEventListener('mouseenter', function () {
         this.style.animation = 'none';
         setTimeout(() => {
             this.style.animation = '';
@@ -151,12 +151,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add Loading State to Buttons
     document.querySelectorAll('.btn-primary').forEach(btn => {
-        btn.addEventListener('click', function(e) {
+        btn.addEventListener('click', function (e) {
             if (this.href && this.href.includes('wa.me')) {
                 // Add loading state
                 const originalText = this.innerHTML;
                 this.innerHTML = '<svg class="spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none" opacity="0.25"/><path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/></svg> Abrindo WhatsApp...';
-                
+
                 setTimeout(() => {
                     this.innerHTML = originalText;
                 }, 2000);
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add Ripple Effect to Buttons
     document.querySelectorAll('.btn').forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             const ripple = document.createElement('span');
             const rect = this.getBoundingClientRect();
             const size = Math.max(rect.width, rect.height);
@@ -263,7 +263,7 @@ window.addEventListener('scroll', debounce(() => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - 100;
         const sectionId = section.getAttribute('id');
-        
+
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelectorAll(`a[href="#${sectionId}"]`).forEach(link => {
                 link.classList.add('active');
@@ -275,3 +275,62 @@ window.addEventListener('scroll', debounce(() => {
         }
     });
 }, 100));
+
+// FAQ Accordion
+document.addEventListener('DOMContentLoaded', function () {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+            // Close other open items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+        });
+
+        // Keyboard accessibility
+        question.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                question.click();
+            }
+        });
+    });
+});
+
+// Mobile Navigation Toggle
+document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = navMenu.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    }
+});
