@@ -246,6 +246,29 @@ body.dark-mode .lead {
     color: var(--text-muted);
 }
 
+/* Navbar Dark Mode */
+body.dark-mode .navbar {
+    background: rgba(15, 23, 42, 0.95);
+    /* Dark background matching theme */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-brand a {
+    color: var(--white);
+}
+
+body.dark-mode .nav-toggle span {
+    background-color: var(--white);
+}
+
+/* Mobile Menu Dark Mode */
+@media (max-width: 968px) {
+    body.dark-mode .nav-menu {
+        background: rgba(15, 23, 42, 0.98);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
 
 .container {
     max-width: 1200px;
