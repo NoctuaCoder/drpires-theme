@@ -19,6 +19,46 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(el);
     });
 
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
+
+    // Check for saved preference or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        body.classList.add('dark-mode');
+        if (sunIcon && moonIcon) {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        }
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+
+            // Toggle icons
+            if (isDark) {
+                if (sunIcon && moonIcon) {
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'block';
+                }
+                localStorage.setItem('theme', 'dark');
+            } else {
+                if (sunIcon && moonIcon) {
+                    sunIcon.style.display = 'block';
+                    moonIcon.style.display = 'none';
+                }
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    }
+
     // Back to Top Button
     const backToTop = document.querySelector('.back-to-top');
 
@@ -364,41 +404,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
             lastScroll = scrollTop;
         }, 100));
-    }
-});
-
-// Theme Toggle Logic
-document.addEventListener('DOMContentLoaded', function () {
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
-    const sunIcon = document.querySelector('.sun-icon');
-    const moonIcon = document.querySelector('.moon-icon');
-
-    // Check for saved preference or system preference
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
-        body.classList.add('dark-mode');
-        sunIcon.style.display = 'none';
-        moonIcon.style.display = 'block';
-    }
-
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            const isDark = body.classList.contains('dark-mode');
-
-            // Toggle icons
-            if (isDark) {
-                sunIcon.style.display = 'none';
-                moonIcon.style.display = 'block';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                sunIcon.style.display = 'block';
-                moonIcon.style.display = 'none';
-                localStorage.setItem('theme', 'light');
-            }
-        });
     }
 });

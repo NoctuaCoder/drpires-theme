@@ -107,56 +107,52 @@ body.dark-mode .testimonial-card,
 body.dark-mode .faq-item,
 body.dark-mode .timeline-content,
 body.dark-mode .partner-item {
-    border: 1px solid rgba(59, 130, 246, 0.3);
-    /* Blue border */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(59, 130, 246, 0.1);
-    /* Glow effect */
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    /* Softer blue border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(59, 130, 246, 0.05);
+    /* Subtle glow */
 }
 
 body.dark-mode .card:hover,
 body.dark-mode .blog-card:hover,
 body.dark-mode .partner-item:hover {
-    border-color: var(--cyan);
-    /* Cyan border on hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(6, 182, 212, 0.2);
-    /* Stronger glow */
+    border-color: rgba(96, 165, 250, 0.4);
+    /* Brighter on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
 }
 
 body.dark-mode .btn-primary {
-    background: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
-    /* Brighter gradient */
-    box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
-    /* Neon glow */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, #1E40AF 0%, #0891B2 100%);
+    /* Balanced blue gradient */
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+    border: 1px solid rgba(96, 165, 250, 0.2);
 }
 
 body.dark-mode .btn-primary:hover {
-    box-shadow: 0 0 25px rgba(6, 182, 212, 0.6);
-    /* Intense neon glow */
+    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.4);
     transform: translateY(-2px);
 }
 
 body.dark-mode .card-icon {
-    background: rgba(59, 130, 246, 0.2);
-    color: #60A5FA;
-    /* Brighter blue icon */
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
-    /* Icon glow */
+    background: rgba(59, 130, 246, 0.15);
+    color: #93C5FD;
+    /* Softer blue icon */
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
 }
 
 body.dark-mode .section-badge {
-    background: rgba(6, 182, 212, 0.15);
-    color: #22D3EE;
-    /* Cyan text */
-    border: 1px solid rgba(6, 182, 212, 0.3);
-    box-shadow: 0 0 10px rgba(6, 182, 212, 0.2);
+    background: rgba(59, 130, 246, 0.1);
+    color: #60A5FA;
+    /* Sky blue text */
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.15);
 }
 
 body.dark-mode .timeline-marker {
-    background: #06B6D4;
-    /* Cyan marker */
-    box-shadow: 0 0 10px #06B6D4;
-    /* Marker glow */
+    background: #3B82F6;
+    /* Bright blue marker */
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
 }
 
 body.dark-mode p {
