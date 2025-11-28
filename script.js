@@ -164,25 +164,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Image Lazy Loading Enhancement
-    const images = document.querySelectorAll('img');
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.style.opacity = '0';
-                img.style.transition = 'opacity 0.5s';
-                
-                img.onload = () => {
-                    img.style.opacity = '1';
-                };
-                
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-
-    images.forEach(img => imageObserver.observe(img));
+    // Image Lazy Loading Enhancement - REMOVED TO FIX CONFLICT
+    // The images were blinking because this script was fighting with the AOS animation
+    // AOS already handles the opacity transition for elements with data-aos
 
     // Add Ripple Effect to Buttons
     document.querySelectorAll('.btn').forEach(button => {
