@@ -3,16 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="description"
         content="Saúde Mental com abordagem moderna e acolhedora. Médico especialista em saúde mental, ansiedade, depressão e tratamentos personalizados.">
     <title>Dr. Pires - Saúde Mental | Transforme sua Vida</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- CRITICAL CSS - Mobile Overflow Prevention -->
+    <style>
+        html,
+        body {
+            overflow-x: hidden !important;
+            max-width: 100vw !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        * {
+            box-sizing: border-box !important;
+        }
+
+        @media (max-width: 768px) {
+            * {
+                max-width: 100% !important;
+            }
+
+            .container,
+            .section,
+            .hero,
+            .navbar {
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+        }
+    </style>
+
+    <!-- Performance: Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com">
+
+    <!-- Fonts: Display swap for better performance -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="demo-style.css?v=1.0.1">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="demo-style.css?v=2.0.0">
 </head>
 
 <body>
@@ -22,8 +62,34 @@
         <div class="container nav-container">
             <div class="nav-brand">
                 <a href="#home">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    <!-- Detailed Brain Icon with Gradient -->
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Main brain shape with detailed lobes -->
+                        <path
+                            d="M30 25 C25 25, 20 28, 18 33 C16 38, 15 42, 16 47 C14 49, 13 52, 14 55 C15 60, 18 63, 22 65 C20 68, 20 72, 22 75 C24 78, 28 80, 32 80 C34 82, 37 83, 40 83 L60 83 C63 83, 66 82, 68 80 C72 80, 76 78, 78 75 C80 72, 80 68, 78 65 C82 63, 85 60, 86 55 C87 52, 86 49, 84 47 C85 42, 84 38, 82 33 C80 28, 75 25, 70 25 C68 22, 65 20, 62 19 C58 17, 54 16, 50 16 C46 16, 42 17, 38 19 C35 20, 32 22, 30 25 Z"
+                            fill="url(#brainGradient)" stroke="url(#brainGradient)" stroke-width="1" />
+                        <!-- Neural pathways and folds (white details) -->
+                        <path d="M28 35 Q26 38, 27 42 M32 30 Q30 34, 31 38 M36 28 Q34 32, 35 36" stroke="white"
+                            stroke-width="2" stroke-linecap="round" fill="none" opacity="0.9" />
+                        <path d="M72 35 Q74 38, 73 42 M68 30 Q70 34, 69 38 M64 28 Q66 32, 65 36" stroke="white"
+                            stroke-width="2" stroke-linecap="round" fill="none" opacity="0.9" />
+                        <path d="M25 50 Q23 54, 25 58 M28 55 Q26 59, 28 63" stroke="white" stroke-width="2"
+                            stroke-linecap="round" fill="none" opacity="0.9" />
+                        <path d="M75 50 Q77 54, 75 58 M72 55 Q74 59, 72 63" stroke="white" stroke-width="2"
+                            stroke-linecap="round" fill="none" opacity="0.9" />
+                        <path d="M35 70 Q38 73, 42 74 M45 72 Q48 74, 52 74 M55 72 Q58 74, 62 74 M65 70 Q62 73, 58 74"
+                            stroke="white" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.9" />
+                        <!-- Cerebellum -->
+                        <ellipse cx="50" cy="85" rx="12" ry="6" fill="url(#brainGradient)" opacity="0.8" />
+                        <path d="M42 85 Q45 87, 50 87 Q55 87, 58 85" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" fill="none" opacity="0.7" />
                     </svg>
                     <span>Dr. Pires - Saúde Mental</span>
                 </a>
@@ -43,6 +109,15 @@
                 <li><a href="#faq" class="nav-link">FAQ</a></li>
                 <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
                 <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li><a href="tel:+5543999645393" class="nav-link mobile-phone-display">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            style="width: 18px; height: 18px; vertical-align: middle; margin-right: 8px;">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        (43) 99964-5393
+                    </a></li>
+                <!-- WhatsApp: 55 (Brasil) + 43 (DDD) + 999645393 (Número) -->
                 <li><a href="https://wa.me/5543999645393?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
                         class="btn btn-small btn-primary" target="_blank">Agendar</a></li>
             </ul>
@@ -50,6 +125,8 @@
     </nav>
 
     <!-- Floating WhatsApp Button -->
+    <!-- 📱 NÚMERO DO WHATSAPP: 55 (Brasil) + 43 (DDD Londrina) + 99964-5393 -->
+    <!-- Para trocar: wa.me/SEU_CODIGO_PAIS + SEU_DDD + SEU_NUMERO (sem espaços, sem traços) -->
     <a href="https://wa.me/5543999645393?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento."
         class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <svg viewBox="0 0 32 32" fill="currentColor">
@@ -93,7 +170,7 @@
 
             <div class="hero-image" data-aos="fade-left">
                 <div class="image-card">
-                    <img src="assets/img/hero-psychologist.jpg" alt="Psicóloga profissional">
+                    <img src="assets/img/hero-psychologist.jpg" alt="Psicóloga profissional" loading="lazy">
                     <div class="image-decoration"></div>
                 </div>
             </div>
@@ -195,7 +272,7 @@
             <div class="blog-grid">
                 <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="blog-image">
-                        <img src="assets/img/blog-anxiety.jpg" alt="Ansiedade">
+                        <img src="assets/img/blog-anxiety.jpg" alt="Ansiedade" loading="lazy">
                         <div class="blog-category">Ansiedade</div>
                     </div>
                     <div class="blog-content">
@@ -223,7 +300,7 @@
 
                 <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="blog-image">
-                        <img src="assets/img/blog-mindfulness.jpg" alt="Mindfulness">
+                        <img src="assets/img/blog-mindfulness.jpg" alt="Mindfulness" loading="lazy">
                         <div class="blog-category">Mindfulness</div>
                     </div>
                     <div class="blog-content">
@@ -251,7 +328,7 @@
 
                 <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="blog-image">
-                        <img src="assets/img/blog-selfcare.jpg" alt="Autocuidado">
+                        <img src="assets/img/blog-selfcare.jpg" alt="Autocuidado" loading="lazy">
                         <div class="blog-category">Autocuidado</div>
                     </div>
                     <div class="blog-content">
@@ -284,7 +361,7 @@
         <div class="container sobre-content">
             <div class="sobre-image" data-aos="fade-right">
                 <div class="image-wrapper">
-                    <img src="assets/img/office-blue.png" alt="Consultório de psicologia">
+                    <img src="assets/img/office-blue.png" alt="Consultório de psicologia" loading="lazy">
                     <div class="image-overlay"></div>
                 </div>
             </div>
@@ -293,9 +370,12 @@
                 <span class="section-badge">Sobre Mim</span>
                 <h2>Abordagem <span class="gradient-text">Humanizada</span></h2>
                 <p class="lead"><strong>Dr. Vinicius Pires</strong>, médico especialista em saúde mental, cursando
-                    <strong>Pós-graduação em Psiquiatria no renomado Hospital Israelita Albert Einstein</strong>
-                    <a href="https://www.einstein.br/especialidades/psiquiatria/" target="_blank" rel="noopener noreferrer" class="einstein-badge" title="Psiquiatria - Hospital Israelita Albert Einstein">
-                        <img src="https://media.einstein.br/sites/default/files/2025-07/Simbolo-HIAE-_500x500px.png" alt="Logo Hospital Albert Einstein" class="einstein-logo">
+                    <strong>Pós-graduação em Psiquiatria no Hospital Israelita Albert Einstein</strong>
+                    <a href="https://www.einstein.br/especialidades/psiquiatria/" target="_blank"
+                        rel="noopener noreferrer" class="einstein-badge"
+                        title="Psiquiatria - Hospital Israelita Albert Einstein">
+                        <img src="https://media.einstein.br/sites/default/files/2025-07/Simbolo-HIAE-_500x500px.png"
+                            alt="Logo Hospital Albert Einstein" class="einstein-logo">
                     </a>.
                 </p>
 
@@ -710,6 +790,7 @@
                 </div>
 
                 <div class="contato-cta">
+                    <!-- WhatsApp CTA: 55 + 43 + 99964-5393 -->
                     <a href="https://wa.me/5543999645393?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta."
                         class="btn btn-primary btn-large" target="_blank">
                         <svg viewBox="0 0 24 24" fill="currentColor">

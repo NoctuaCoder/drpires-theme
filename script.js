@@ -92,24 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Typing Effect for Hero Title (Optional Enhancement)
-    const heroTitle = document.querySelector('.hero h1');
-    if (heroTitle) {
-        const text = heroTitle.innerHTML;
-        heroTitle.innerHTML = '';
-        let i = 0;
 
-        function typeWriter() {
-            if (i < text.length) {
-                heroTitle.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        }
-
-        // Uncomment to enable typing effect
-        // setTimeout(typeWriter, 500);
-    }
 
     // Stats Counter Animation
     const stats = document.querySelectorAll('.stat-number');
@@ -168,9 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Image Lazy Loading Enhancement - REMOVED TO FIX CONFLICT
-    // The images were blinking because this script was fighting with the AOS animation
-    // AOS already handles the opacity transition for elements with data-aos
+
 
     // Add Ripple Effect to Buttons
     document.querySelectorAll('.btn').forEach(button => {
@@ -230,9 +211,16 @@ document.addEventListener('DOMContentLoaded', function () {
 function acceptCookies() {
     localStorage.setItem('cookieAccepted', 'true');
     const cookieBanner = document.getElementById('cookieBanner');
-    cookieBanner.classList.remove('show');
+
+    // Add fade out animation
+    cookieBanner.style.opacity = '0';
+    cookieBanner.style.transform = 'translateY(100%)';
+    cookieBanner.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+
+    // Remove from DOM after animation
     setTimeout(() => {
         cookieBanner.style.display = 'none';
+        cookieBanner.remove(); // Completely remove from DOM
     }, 300);
 }
 
