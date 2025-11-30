@@ -1132,10 +1132,14 @@ section {
         top: 70px;
         left: -100%;
         width: 100%;
+        height: calc(100vh - 70px);
         background: rgba(10, 18, 42, 0.98);
-        backdrop-filter: blur(10px);
-        padding: var(--spacing-lg);
-        transition: var(--transition-base);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition-medium);
+        border-top: 1px solid rgba(36, 71, 108, 0.3);
         border-bottom: 1px solid rgba(36, 71, 108, 0.2);
     }
 
@@ -1156,6 +1160,22 @@ section {
     .testimonials-grid,
     .blog-grid {
         grid-template-columns: 1fr;
+    }
+
+    .partnership-card,
+    .preconsulta .partnership-card {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-lg);
+    }
+
+    .partnership-icon {
+        margin: 0 auto;
+    }
+
+    .partnership-contact {
+        justify-content: center;
     }
 
     .cookie-content {
