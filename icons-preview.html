@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções de Ícone - Dr. Pires</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F1419;
+            color: #F9FAFB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(17, 24, 39, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #3B82F6;
+            background: rgba(30, 58, 138, 0.2);
+        }
+
+        .icon-box {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin: 0 0 10px 0;
+            color: #3B82F6;
+        }
+
+        p {
+            margin: 0;
+            color: #9CA3AF;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* Gradient Definition */
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Escolha o Ícone do Cérebro 🧠</h1>
+
+    <!-- Shared Gradient -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <div class="grid">
+        <!-- Option 1: Ultra Detailed (Current) -->
+        <div class="card">
+            <div class="icon-box">
+                <svg viewBox="0 0 120 100" fill="none">
+                    <path
+                        d="M30 38 C25 38 20 42 18 47 C16 52 15 57 16 62 C14 64 13 67 13 70 C13 75 16 79 20 81 C19 84 19 87 21 90 C23 93 27 95 31 95 L50 95 C54 95 58 94 61 92 C65 92 69 90 72 87 C74 84 75 80 75 76 C79 74 82 71 84 67 C86 63 87 59 87 54 C87 49 85 44 82 41 C84 38 85 35 85 31 C85 25 81 20 75 18 C73 14 70 11 66 9 C62 7 58 6 54 6 C50 6 46 7 42 9 C38 11 35 14 33 18 C30 19 28 22 27 25 C26 28 26 31 27 34 C28 36 29 37 30 38 Z"
+                        fill="url(#brainGradient)" stroke="url(#brainGradient)" stroke-width="0.5" />
+                    <path d="M32 42 C30 44 30 47 32 49" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M37 40 C35 42 35 45 37 47" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M42 38 C40 40 40 43 42 45" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M52 34 L52 55" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+                    <path d="M57 36 C55 38 55 41 57 43" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M62 38 C60 40 60 43 62 45" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M35 58 C38 56 42 56 45 58" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M33 63 C36 61 40 61 43 63" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M28 52 C35 50 42 50 48 52" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                        opacity="0.9" />
+                    <path
+                        d="M48 78 C52 76 58 76 62 78 C65 80 66 84 64 87 C61 90 56 92 51 92 C46 92 41 90 38 87 C36 84 37 80 40 78 C43 76 45 76 48 78 Z"
+                        fill="url(#brainGradient)" opacity="0.95" />
+                    <path d="M42 80 C46 79 50 79 54 80" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M51 92 L51 96 C51 98 49 100 47 100 C45 100 43 98 43 96 L43 94" fill="url(#brainGradient)"
+                        opacity="0.9" />
+                </svg>
+            </div>
+            <h3>1. Anatômico Realista</h3>
+            <p>O atual. Rico em detalhes, científico e profissional.</p>
+        </div>
+
+        <!-- Option 2: Geometric / Tech -->
+        <div class="card">
+            <div class="icon-box">
+                <svg viewBox="0 0 100 100" fill="none">
+                    <path d="M50 20 L75 35 L75 65 L50 80 L25 65 L25 35 Z" stroke="url(#brainGradient)" stroke-width="2"
+                        fill="none" />
+                    <path d="M50 20 L50 50 L75 65" stroke="url(#brainGradient)" stroke-width="2" />
+                    <path d="M50 50 L25 65" stroke="url(#brainGradient)" stroke-width="2" />
+                    <circle cx="50" cy="20" r="3" fill="url(#brainGradient)" />
+                    <circle cx="75" cy="35" r="3" fill="url(#brainGradient)" />
+                    <circle cx="75" cy="65" r="3" fill="url(#brainGradient)" />
+                    <circle cx="50" cy="80" r="3" fill="url(#brainGradient)" />
+                    <circle cx="25" cy="65" r="3" fill="url(#brainGradient)" />
+                    <circle cx="25" cy="35" r="3" fill="url(#brainGradient)" />
+                    <circle cx="50" cy="50" r="3" fill="url(#brainGradient)" />
+                    <path d="M35 40 L65 40" stroke="url(#brainGradient)" stroke-width="1" stroke-dasharray="4 2" />
+                    <path d="M40 60 L60 60" stroke="url(#brainGradient)" stroke-width="1" stroke-dasharray="4 2" />
+                </svg>
+            </div>
+            <h3>2. Geométrico Tech</h3>
+            <p>Moderno, conectado, estrutura de rede neural.</p>
+        </div>
+
+        <!-- Option 3: Minimalist Curves -->
+        <div class="card">
+            <div class="icon-box">
+                <svg viewBox="0 0 100 100" fill="none" stroke="url(#brainGradient)" stroke-width="6"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M30 40 C20 40 15 50 15 60 C15 75 30 85 50 85 C70 85 85 75 85 60 C85 50 80 40 70 40" />
+                    <path d="M30 40 C30 25 40 15 50 15 C60 15 70 25 70 40" />
+                    <path d="M50 15 V 85" />
+                    <path d="M30 40 H 70" />
+                </svg>
+            </div>
+            <h3>3. Minimalista Bold</h3>
+            <p>Traços grossos, simples, icônico e legível.</p>
+        </div>
+
+        <!-- Option 4: Fluid / Abstract -->
+        <div class="card">
+            <div class="icon-box">
+                <svg viewBox="0 0 100 100" fill="none">
+                    <path d="M50 15 C30 15 15 30 15 50 C15 70 30 85 50 85 C70 85 85 70 85 50 C85 30 70 15 50 15 Z"
+                        fill="url(#brainGradient)" opacity="0.2" />
+                    <path d="M50 25 C35 25 25 35 25 50 C25 65 35 75 50 75 C65 75 75 65 75 50 C75 35 65 25 50 25 Z"
+                        stroke="url(#brainGradient)" stroke-width="3" />
+                    <path d="M35 50 Q 50 35 65 50" stroke="url(#brainGradient)" stroke-width="3"
+                        stroke-linecap="round" />
+                    <path d="M35 50 Q 50 65 65 50" stroke="url(#brainGradient)" stroke-width="3"
+                        stroke-linecap="round" />
+                    <circle cx="50" cy="50" r="5" fill="white" />
+                </svg>
+            </div>
+            <h3>4. Abstrato Fluido</h3>
+            <p>Suave, orgânico, foco em bem-estar e harmonia.</p>
+        </div>
+
+        <!-- Option 5: Circuit / Digital -->
+        <div class="card">
+            <div class="icon-box">
+                <svg viewBox="0 0 100 100" fill="none" stroke="url(#brainGradient)" stroke-width="3"
+                    stroke-linecap="round">
+                    <path d="M25 50 L35 50 L40 40 L50 60 L60 40 L65 50 L75 50" />
+                    <path d="M20 30 C20 20 80 20 80 30" />
+                    <path d="M20 70 C20 80 80 80 80 70" />
+                    <path d="M20 30 V 70" />
+                    <path d="M80 30 V 70" />
+                    <circle cx="50" cy="50" r="25" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+            <h3>5. Digital Pulse</h3>
+            <p>Foco em monitoramento, atividade cerebral e tecnologia.</p>
+        </div>
+    </div>
+</body>
+
+</html>
