@@ -530,7 +530,7 @@ section {
 .einstein-badge {
     display: inline-flex;
     align-items: center;
-    margin-left: var(--spacing-sm);
+    margin-left: var(--spacing-xs);
     vertical-align: middle;
 }
 
@@ -641,6 +641,7 @@ section {
     justify-content: center;
     font-weight: 700;
     font-size: 1.25rem;
+    color: #FFFFFF;
 }
 
 .author-info h4 {
