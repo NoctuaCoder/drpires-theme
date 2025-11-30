@@ -1,0 +1,8 @@
+# Dr. Pires Theme
+node_modules/
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.zip
+Thumbs.db
