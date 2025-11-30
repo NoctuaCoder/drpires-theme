@@ -1,183 +1,123 @@
-# Dr. Pires - Tema WordPress para Psicologia Clínica
+# Dr. Vinicius Pires - Psiquiatria & Saúde Mental
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![WordPress](https://img.shields.io/badge/WordPress-5.0+-green.svg)
-![License](https://img.shields.io/badge/license-GPL--2.0-red.svg)
+Site premium para clínica psiquiátrica com tema azul escuro sofisticado.
 
-Tema WordPress elegante e profissional desenvolvido especialmente para psicólogos clínicos. Design minimalista com paleta de cores quentes e acolhedoras, ideal para profissionais de saúde mental.
+![Preview](https://img.shields.io/badge/Status-Live-success)
+![Version](https://img.shields.io/badge/Version-2.0-blue)
 
-## 🎨 Características
+## 🎨 Tema Azul Premium
 
-- **Design Elegante**: Paleta de cores quentes e acolhedoras (tons terrosos e dourados)
-- **Totalmente Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
-- **Landing Page Profissional**: Template de página inicial otimizado para conversão
-- **Blog Integrado**: Sistema de artigos com custom post type
-- **Customizador WordPress**: Edite facilmente informações de contato, imagens e textos
-- **Integração WhatsApp**: Botões de call-to-action conectados ao WhatsApp
-- **SEO Friendly**: Código otimizado para mecanismos de busca
-- **Performance**: Código limpo e otimizado para carregamento rápido
+Paleta de cores profissional que transmite confiança e serenidade:
 
-## 📋 Requisitos
+- **#1B1B1B** - Preto profundo (backgrounds)
+- **#A8A9AD** - Cinza claro (texto secundário)
+- **#24476C** - Azul petróleo (destaque principal)
+- **#0A122A** - Azul marinho escuro (contraste)
+- **#E6E8E6** - Branco gelo (texto principal)
 
-- WordPress 5.0 ou superior
-- PHP 7.4 ou superior
-- Navegadores modernos (Chrome, Firefox, Safari, Edge)
+## 👨‍⚕️ Informações do Profissional
 
-## 🚀 Instalação
+- **Nome:** Dr. Vinicius Pires
+- **CRM:** CRM-PR 53.725
+- **Formação:** Pós-graduando em Psiquiatria - Hospital Israelita Albert Einstein
+- **Localização:** Arapongas - PR
+- **WhatsApp:** (43) 99964-5393
+- **E-mail:** Drviniciuspsiq@gmail.com
 
-### Método 1: Via Admin do WordPress (Recomendado)
+## ✨ Características
 
-1. Baixe o tema como arquivo ZIP do GitHub
-2. No painel do WordPress, vá em **Aparência → Temas → Adicionar Novo**
-3. Clique em **Enviar Tema**
-4. Selecione o arquivo ZIP baixado
-5. Clique em **Instalar Agora**
-6. Após a instalação, clique em **Ativar**
+### Design Premium
+- Tema escuro sofisticado
+- Efeitos de glassmorphism
+- Gradientes suaves em azul
+- Micro-animações elegantes
+- Totalmente responsivo
 
-### Método 2: Via FTP
+### Seções Completas
+1. **Hero** - Apresentação com foto profissional e estatísticas
+2. **Sobre** - Credenciais com badge do Hospital Albert Einstein
+3. **Serviços** - Grid de especialidades
+4. **Depoimentos** - Avaliações reais de pacientes
+5. **Blog** - Artigos sobre saúde mental
+6. **Pré-Consulta** - Formulário Google Forms
+7. **Parceiros** - Área para encaminhamento médico
+8. **Contato** - Informações e CTA para WhatsApp
 
-1. Baixe e extraia o arquivo ZIP do tema
-2. Conecte-se ao seu servidor via FTP
-3. Navegue até `/wp-content/themes/`
-4. Faça upload da pasta `drpires-theme`
-5. No painel do WordPress, vá em **Aparência → Temas**
-6. Ative o tema "Dr. Pires - Psicologia Clínica"
+### Funcionalidades Interativas
+- ✅ Menu mobile responsivo com glassmorphism
+- ✅ Animações ao scroll (Intersection Observer)
+- ✅ Contador animado de estatísticas
+- ✅ Botão flutuante do WhatsApp
+- ✅ Banner de cookies (LGPD)
+- ✅ Botão "Voltar ao topo"
+- ✅ Efeito parallax no hero
+- ✅ Navegação suave entre seções
+- ✅ Badge clicável do Hospital Einstein
 
-## ⚙️ Configuração
+## 🚀 Como Usar
 
-### 1. Configurar Informações de Contato
+### Visualização Local
 
-Vá em **Aparência → Personalizar → Informações de Contato** e configure:
+```bash
+# Clone o repositório
+git clone https://github.com/NoctuaCoder/drpires-theme.git
 
-- **Número do WhatsApp**: Formato `5511999999999` (código do país + DDD + número)
-- **E-mail de Contato**: Seu e-mail profissional
-- **Número do CRP**: Seu registro no Conselho Regional de Psicologia
-- **Endereço**: Endereço do consultório
+# Entre na pasta
+cd drpires-theme
 
-### 2. Configurar a Página Inicial
+# Inicie um servidor local
+python -m http.server 8000
 
-1. Crie uma nova página chamada "Início" ou "Home"
-2. Vá em **Configurações → Leitura**
-3. Selecione "Uma página estática" em **Sua página inicial exibe**
-4. Escolha a página criada como **Página inicial**
+# Acesse no navegador
+http://localhost:8000
+```
 
-### 3. Adicionar Artigos ao Blog
-
-1. No painel do WordPress, vá em **Artigos → Adicionar Novo**
-2. Crie seus artigos sobre saúde mental
-3. Adicione uma imagem destacada para cada artigo
-4. Os 3 artigos mais recentes aparecerão automaticamente na página inicial
-
-### 4. Configurar Menus
-
-1. Vá em **Aparência → Menus**
-2. Crie um novo menu
-3. Adicione as páginas desejadas
-4. Atribua o menu à localização **Primary Menu** (menu principal)
-
-### 5. Personalizar Imagens da Landing Page
-
-No **Personalizador do WordPress**, você pode adicionar configurações personalizadas para:
-- Imagem do Hero (seção principal)
-- Imagem da seção de Métodos
-- Depoimentos de pacientes
-
-## 📁 Estrutura de Arquivos
+### Estrutura de Arquivos
 
 ```
 drpires-theme/
-├── style.css           # Estilos principais + cabeçalho do tema
-├── functions.php       # Funções e configurações do tema
-├── header.php          # Cabeçalho do site
-├── footer.php          # Rodapé do site
-├── front-page.php      # Template da landing page
-├── index.php           # Template principal (lista de posts)
-├── page.php            # Template para páginas
-├── single.php          # Template para posts individuais
-├── screenshot.png      # Screenshot do tema (1200x900px)
-└── README.md           # Este arquivo
+├── index.html              # Estrutura HTML
+├── style.css               # Estilos CSS
+├── script.js               # JavaScript
+├── dr-vinicius-pires.jpg   # Foto profissional
+├── brain-favicon.png       # Favicon
+└── README.md               # Documentação
 ```
 
-## 🎯 Custom Post Types
+## 🎯 Próximos Passos
 
-### Artigos
+### Migração para WordPress
+1. Criar estrutura de tema WordPress
+2. Converter HTML em templates PHP
+3. Implementar Custom Post Types (Serviços, Depoimentos)
+4. Integrar plugins (Contact Form 7, Yoast SEO)
+5. Configurar opções do tema (Customizer)
 
-O tema inclui um custom post type chamado **Artigos** para gerenciar o conteúdo do blog:
-
-- **Slug**: `artigos`
-- **Taxonomia**: `categoria_artigo`
-- **Suporte**: Título, Editor, Resumo, Imagem Destacada
-- **Gutenberg**: Habilitado
-
-## 🎨 Paleta de Cores
-
-```css
---primary-color: #4a3f35;      /* Marrom escuro - Textos e títulos */
---secondary-color: #8c7b6c;    /* Tom terroso */
---accent-color: #d3c2a9;       /* Dourado suave - Botões */
---accent-hover: #c4b095;       /* Dourado hover */
---background-light: #fcfaf8;   /* Off-white quente */
---background-alt: #f4f1ed;     /* Cinza quente */
-```
-
-## 🔧 Customização Avançada
-
-### Modificar Estilos
-
-Edite o arquivo `style.css` para personalizar:
-- Cores (variáveis CSS no `:root`)
-- Tipografia
-- Espaçamentos
-- Layouts
-
-### Adicionar Funcionalidades
-
-Edite o arquivo `functions.php` para:
-- Registrar novos custom post types
-- Adicionar widget areas
-- Criar shortcodes personalizados
-- Integrar plugins
+### Melhorias Futuras
+- [ ] Sistema de blog funcional
+- [ ] Integração com Google Analytics
+- [ ] Otimização SEO avançada
+- [ ] Sistema de agendamento online
+- [ ] Área administrativa
 
 ## 📱 Responsividade
 
-O tema é totalmente responsivo com breakpoints em:
-- **Desktop**: > 768px
-- **Tablet/Mobile**: ≤ 768px
+- **Desktop:** Layout completo em grid
+- **Tablet:** Adaptação de colunas
+- **Mobile:** Menu hamburger e layout vertical
 
-## 🔒 Segurança
+## 🔧 Tecnologias
 
-- Sanitização de dados do usuário
-- Escape de output
-- Proteção contra acesso direto a arquivos
-- Seguindo WordPress Coding Standards
+- HTML5 semântico
+- CSS3 (Custom Properties, Flexbox, Grid)
+- JavaScript ES6+
+- Google Fonts (Inter)
+- Font Awesome 6.4.0
 
 ## 📄 Licença
 
-Este tema é licenciado sob a [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html).
-
-## 👨‍💻 Desenvolvedor
-
-**NoctuaCoder**
-- GitHub: [@NoctuaCoder](https://github.com/NoctuaCoder)
-- Repositório: [drpires-theme](https://github.com/NoctuaCoder/drpires-theme)
-
-## 🆘 Suporte
-
-Para reportar bugs ou solicitar recursos:
-1. Abra uma [issue no GitHub](https://github.com/NoctuaCoder/drpires-theme/issues)
-2. Descreva o problema detalhadamente
-3. Inclua screenshots se possível
-
-## 📝 Changelog
-
-### Versão 1.0.0 (2025-11-27)
-- Lançamento inicial
-- Landing page profissional para psicólogos
-- Custom post type para artigos
-- Integração com WhatsApp
-- Customizador para informações de contato
-- Design responsivo e elegante
+© 2025 Dr. Vinicius Pires - Todos os direitos reservados.
 
 ---
 
-**Desenvolvido com ❤️ para profissionais de saúde mental**
+**Desenvolvido com ❤️ e tecnologia premium**

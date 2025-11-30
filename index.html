@@ -3,788 +3,478 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Saúde Mental com abordagem moderna e acolhedora. Médico especialista em saúde mental, ansiedade, depressão e tratamentos personalizados.">
-    <title>Dr. Pires - Saúde Mental | Transforme sua Vida</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
-    <meta name="format-detection" content="telephone=no">
+        content="Dr. Vinicius Pires - Médico Psiquiatra CRM-PR 53.725. Pós-graduando em Psiquiatria pelo Hospital Albert Einstein. Atendimento humanizado em Arapongas-PR.">
+    <title>Dr. Vinicius Pires - Psiquiatria & Saúde Mental</title>
 
-    <!-- CRITICAL CSS - Mobile Overflow Prevention -->
-    <style>
-        html,
-        body {
-            overflow-x: hidden !important;
-            max-width: 100vw !important;
-            width: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        * {
-            box-sizing: border-box !important;
-        }
-
-        @media (max-width: 768px) {
-            * {
-                max-width: 100% !important;
-            }
-
-            .container,
-            .section,
-            .hero,
-            .navbar {
-                max-width: 100vw !important;
-                overflow-x: hidden !important;
-            }
-        }
-    </style>
-
-    <!-- Performance: Preconnect to external domains -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://www.google.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Fonts: Display swap for better performance -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="brain-favicon.png">
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="demo-style.css?v=3.1.5">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <div class="container nav-container">
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
             <div class="nav-brand">
-                <a href="#home">
-                    <img src="brain-icon.png" alt="Brain Icon" style="width: 40px; height: 40px;">
-                    <span>Dr. Pires - Saúde Mental</span>
-                </a>
+                <i class="fas fa-brain"></i>
+                <span>Dr. Vinicius Pires</span>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
             </div>
 
             <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <i class="fas fa-bars"></i>
             </button>
-
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Início</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#faq" class="nav-link">FAQ</a></li>
-                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-                <li><a href="tel:+5543999645393" class="nav-link mobile-phone-display">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            style="width: 18px; height: 18px; vertical-align: middle; margin-right: 8px;">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
-                        (43) 99964-5393
-                    </a></li>
-                <!-- WhatsApp: 55 (Brasil) + 43 (DDD) + 999645393 (Número) -->
-                <li><a href="https://wa.me/5543999645393?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
-                        class="btn btn-small btn-primary" target="_blank">Agendar</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Floating WhatsApp Button -->
-    <!-- 📱 NÚMERO DO WHATSAPP: 55 (Brasil) + 43 (DDD Londrina) + 99964-5393 -->
-    <!-- Para trocar: wa.me/SEU_CODIGO_PAIS + SEU_DDD + SEU_NUMERO (sem espaços, sem traços) -->
-    <a href="https://wa.me/5543999645393?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento."
-        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <svg viewBox="0 0 32 32" fill="currentColor">
-            <path
-                d="M16 0C7.164 0 0 7.164 0 16c0 2.825.736 5.479 2.024 7.776L0 32l8.416-2.008A15.94 15.94 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.547 0-4.96-.711-7.003-1.947l-.503-.297-5.211 1.245 1.269-5.088-.326-.521A13.267 13.267 0 012.667 16c0-7.364 5.969-13.333 13.333-13.333S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.307-9.973c-.4-.2-2.365-1.167-2.731-1.3-.365-.133-.631-.2-.897.2-.267.4-1.031 1.3-1.264 1.567-.233.267-.465.3-.865.1-.4-.2-1.688-.622-3.215-1.984-1.188-1.06-1.991-2.368-2.224-2.768-.233-.4-.025-.616.175-.815.18-.18.4-.465.6-.698.2-.233.267-.4.4-.667.133-.267.067-.5-.033-.698-.1-.2-.897-2.164-1.229-2.964-.324-.779-.653-.673-.897-.685-.233-.012-.5-.015-.765-.015s-.698.1-1.064.5c-.365.4-1.396 1.367-1.396 3.331s1.429 3.864 1.629 4.131c.2.267 2.815 4.297 6.819 6.027.953.412 1.697.659 2.277.843.957.304 1.829.261 2.517.159.768-.115 2.365-.967 2.699-1.901.333-.933.333-1.733.233-1.901-.1-.167-.365-.267-.765-.467z" />
-        </svg>
-    </a>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" aria-label="Voltar ao topo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 19V5M5 12l7-7 7 7" />
-        </svg>
-    </button>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home" style="padding-top: 8rem;">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-
-        <div class="container hero-content">
-            <div class="hero-text" data-aos="fade-up">
-                <span class="hero-badge">Saúde Mental</span>
-                <h1>Transforme sua <span class="gradient-text">Saúde Mental</span></h1>
-                <p class="hero-subtitle">Encontre equilíbrio emocional e bem-estar através de um acompanhamento
-                    médico especializado, acolhedor e baseado em evidências científicas.</p>
-
-                <div class="hero-cta">
-                    <a href="#contato" class="btn btn-primary">
-                        Agendar Consulta
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                    <a href="#sobre" class="btn btn-secondary">Saiba Mais</a>
+    <section class="hero" id="inicio">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-animate>
+                    <h1>Cuidando da sua <span class="highlight">Saúde Mental</span></h1>
+                    <p class="hero-subtitle">Atendimento psiquiátrico humanizado, baseado em evidências científicas e
+                        focado no seu bem-estar integral.</p>
+                    <div class="hero-cta">
+                        <a href="#contato" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 20px; height: 20px;">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            Agendar Consulta
+                        </a>
+                        <a href="#sobre" class="btn btn-secondary">
+                            Saiba Mais
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="hero-image" data-aos="fade-left">
-                <div class="image-card">
-                    <img src="assets/img/hero-psychologist.jpg" alt="Psicóloga profissional" loading="lazy">
-                    <div class="image-decoration"></div>
+                <div class="hero-card" data-animate>
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="dr-vinicius-pires.jpg" alt="Dr. Vinicius Pires">
+                            <div class="profile-badge">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Dr. Vinicius Pires</h3>
+                            <p class="profile-title">Médico Psiquiatra | CRM-PR 53.725</p>
+                            <p class="profile-crm">Pós-graduando em Psiquiatria - Hospital Albert Einstein</p>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Dedicação</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">2025</span>
+                                    <span class="stat-label">Em Formação</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">Einstein</span>
+                                    <span class="stat-label">Hospital</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Especialidades Section -->
-    <section class="section especialidades" id="especialidades">
+    <!-- About Section -->
+    <section class="about" id="sobre">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Áreas de Atuação</span>
-                <h2>Como Posso <span class="gradient-text">Ajudar</span></h2>
-                <p>Atendimento especializado para diversas demandas emocionais e psicológicas</p>
+            <div class="section-header" data-animate>
+                <h2>Sobre o Dr. Pires</h2>
+                <p class="section-subtitle">Experiência e dedicação ao cuidado da saúde mental</p>
             </div>
 
-            <div class="cards-grid">
-                <div class="card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-                        </svg>
-                    </div>
-                    <h3>Ansiedade</h3>
-                    <p>Técnicas comprovadas para gerenciar e superar crises de ansiedade, pânico e preocupações
-                        excessivas.</p>
-                </div>
+            <div class="about-content">
+                <div class="about-text" data-animate>
+                    <p class="lead"><strong>Dr. Vinicius Pires</strong>, médico especialista em saúde mental, cursando
+                        <strong>Pós-graduação em Psiquiatria no Hospital Israelita Albert Einstein</strong>
+                        <a href="https://www.einstein.br/especialidades/psiquiatria/" target="_blank"
+                            rel="noopener noreferrer" class="einstein-badge"
+                            title="Psiquiatria - Hospital Israelita Albert Einstein">
+                            <img src="https://media.einstein.br/sites/default/files/2025-07/Simbolo-HIAE-_500x500px.png"
+                                alt="Logo Hospital Albert Einstein" class="einstein-logo">
+                        </a>. Dedicado a
+                        oferecer um atendimento humanizado e personalizado baseado em evidências científicas.
+                    </p>
 
-                <div class="card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                        </svg>
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Formação Acadêmica</h4>
+                                <p>Graduação em Medicina</p>
+                                <p>Pós-graduação em Psiquiatria - Hospital Albert Einstein</p>
+                            </div>
+                        </div>
+
+                        <div class="credential-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Registro Profissional</h4>
+                                <p>CRM-PR 53.725</p>
+                                <p>Atendimento presencial e online</p>
+                            </div>
+                        </div>
+
+                        <div class="credential-item">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <h4>Abordagem</h4>
+                                <p>Tratamento baseado em evidências científicas</p>
+                                <p>Emissão de nota fiscal para reembolso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2>Como Posso Ajudar</h2>
+                <p class="section-subtitle">Especialidades e áreas de atuação</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
                     </div>
                     <h3>Depressão</h3>
-                    <p>Acompanhamento empático para recuperar a motivação, energia e prazer nas atividades do dia a dia.
+                    <p>Tratamento especializado para transtornos depressivos, com abordagem integrada e personalizada.
                     </p>
                 </div>
 
-                <div class="card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M13 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
-                        </svg>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="fas fa-heart-pulse"></i>
                     </div>
-                    <h3>Relacionamentos</h3>
-                    <p>Melhore a comunicação e resolva conflitos em relacionamentos familiares e profissionais.</p>
+                    <h3>Ansiedade</h3>
+                    <p>Manejo de transtornos de ansiedade, síndrome do pânico e fobias com técnicas comprovadas.</p>
                 </div>
 
-                <div class="card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                        </svg>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Transtornos do Sono</h3>
+                    <p>Diagnóstico e tratamento de insônia e outros distúrbios relacionados ao sono.</p>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
                     </div>
                     <h3>Burnout</h3>
-                    <p>Recupere o equilíbrio entre vida pessoal e profissional, prevenindo e tratando o esgotamento.</p>
+                    <p>Acompanhamento para síndrome de burnout e estresse ocupacional.</p>
                 </div>
 
-                <div class="card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M12 6v6l4 2" />
-                        </svg>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3>Transtornos de Humor</h3>
-                    <p>Tratamento especializado para depressão, transtorno bipolar e oscilações emocionais.</p>
+                    <h3>Transtorno Bipolar</h3>
+                    <p>Tratamento especializado para transtorno bipolar com estabilização do humor.</p>
                 </div>
 
-                <div class="card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z" />
-                            <path d="M9 21h6" />
-                            <path d="M10 18h4" />
-                        </svg>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="fas fa-shield-heart"></i>
                     </div>
-                    <h3>Dores Crônicas</h3>
-                    <p>Tratamento especializado para alívio de dores crônicas através de abordagem psiquiátrica e
-                        fitoterapia.</p>
+                    <h3>TDAH</h3>
+                    <p>Diagnóstico e tratamento de Transtorno de Déficit de Atenção e Hiperatividade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2>O Que Dizem Meus Pacientes</h2>
+                <p class="section-subtitle">Depoimentos de quem confia no meu trabalho</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Depois de anos lutando contra a ansiedade, finalmente encontrei um
+                        tratamento que funciona. O Dr. Pires é atencioso, explica tudo com clareza e me ajudou a
+                        entender que buscar ajuda foi a melhor decisão que tomei."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>C.R.</h4>
+                            <p>Paciente desde 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"O acompanhamento psiquiátrico mudou minha vida. Estava com insônia
+                        crônica e dores que nenhum exame explicava. Com o tratamento adequado e a abordagem humanizada
+                        do doutor, hoje durmo bem e recuperei minha qualidade de vida."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <h4>M.S.</h4>
+                            <p>Paciente desde 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Profissional extremamente competente. Me senti acolhida desde a
+                        primeira consulta. O tratamento foi personalizado e respeitou meu tempo. Hoje consigo lidar com
+                        meus transtornos de humor de forma muito mais saudável."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>L.F.</h4>
+                            <p>Paciente desde 2024</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section class="section blog" id="blog">
+    <section class="blog" id="blog">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Blog</span>
-                <h2>Artigos sobre <span class="gradient-text">Saúde Mental</span></h2>
-                <p>Conteúdo exclusivo para ajudar na sua jornada de autoconhecimento</p>
+            <div class="section-header" data-animate>
+                <h2>Artigos & Insights</h2>
+                <p class="section-subtitle">Conteúdo sobre saúde mental e bem-estar</p>
             </div>
 
             <div class="blog-grid">
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-image">
-                        <img src="assets/img/blog-anxiety.jpg" alt="Ansiedade" loading="lazy">
-                        <div class="blog-category">Ansiedade</div>
+                <article class="blog-card" data-animate>
+                    <div class="blog-icon">
+                        <i class="fas fa-fire"></i>
                     </div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <polyline points="12 6 12 12 16 14" />
-                                </svg>
-                                27 de Novembro, 2025
-                            </span>
-                            <span class="blog-read-time">5 min de leitura</span>
-                        </div>
-                        <h3>Como Identificar os Sinais da Ansiedade</h3>
-                        <p>Entenda os principais sintomas físicos e emocionais da ansiedade e quando buscar ajuda
-                            profissional.</p>
-                        <a href="#" class="blog-link">
-                            Ler artigo completo
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
+                        <h3>Burnout: Como Identificar e Prevenir</h3>
+                        <p>Entenda os sinais da síndrome de burnout e aprenda estratégias eficazes para prevenir o
+                            esgotamento profissional.</p>
+                        <a href="#" class="blog-link">Ler mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="blog-image">
-                        <img src="assets/img/blog-mindfulness.jpg" alt="Mindfulness" loading="lazy">
-                        <div class="blog-category">Mindfulness</div>
+                <article class="blog-card" data-animate>
+                    <div class="blog-icon">
+                        <i class="fas fa-spa"></i>
                     </div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <polyline points="12 6 12 12 16 14" />
-                                </svg>
-                                25 de Novembro, 2025
-                            </span>
-                            <span class="blog-read-time">7 min de leitura</span>
-                        </div>
-                        <h3>5 Técnicas de Mindfulness para o Dia a Dia</h3>
-                        <p>Práticas simples de atenção plena que você pode incorporar na sua rotina para reduzir o
-                            estresse.</p>
-                        <a href="#" class="blog-link">
-                            Ler artigo completo
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
+                        <h3>Ansiedade: Técnicas de Controle</h3>
+                        <p>Descubra métodos práticos e cientificamente comprovados para gerenciar a ansiedade no dia a
+                            dia.</p>
+                        <a href="#" class="blog-link">Ler mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="blog-image">
-                        <img src="assets/img/blog-selfcare.jpg" alt="Autocuidado" loading="lazy">
-                        <div class="blog-category">Autocuidado</div>
+                <article class="blog-card" data-animate>
+                    <div class="blog-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <polyline points="12 6 12 12 16 14" />
-                                </svg>
-                                20 de Novembro, 2025
-                            </span>
-                            <span class="blog-read-time">6 min de leitura</span>
-                        </div>
-                        <h3>A Importância do Autocuidado na Saúde Mental</h3>
-                        <p>Descubra por que cuidar de si mesmo não é egoísmo, mas uma necessidade fundamental.</p>
-                        <a href="#" class="blog-link">
-                            Ler artigo completo
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
+                        <h3>Autocuidado e Saúde Mental</h3>
+                        <p>A importância do autocuidado para manter o equilíbrio emocional e prevenir transtornos
+                            mentais.</p>
+                        <a href="#" class="blog-link">Ler mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Section -->
-    <section class="section sobre" id="sobre">
-        <div class="container sobre-content">
-            <div class="sobre-image" data-aos="fade-right">
-                <div class="image-wrapper">
-                    <img src="assets/img/office-blue.png" alt="Consultório de psicologia" loading="lazy">
-                    <div class="image-overlay"></div>
-                </div>
-            </div>
-
-            <div class="sobre-text" data-aos="fade-left">
-                <span class="section-badge">Sobre Mim</span>
-                <h2>Abordagem <span class="gradient-text">Humanizada</span></h2>
-                <p class="lead"><strong>Dr. Vinicius Pires</strong>, médico especialista em saúde mental, cursando
-                    <strong>Pós-graduação em Psiquiatria no Hospital Israelita Albert Einstein</strong>
-                    <a href="https://www.einstein.br/especialidades/psiquiatria/" target="_blank"
-                        rel="noopener noreferrer" class="einstein-badge"
-                        title="Psiquiatria - Hospital Israelita Albert Einstein">
-                        <img src="https://media.einstein.br/sites/default/files/2025-07/Simbolo-HIAE-_500x500px.png"
-                            alt="Logo Hospital Albert Einstein" class="einstein-logo">
-                    </a>.
-                </p>
-
-                <p>Minha abordagem combina tratamentos médicos baseados em evidências científicas com um olhar acolhedor
-                    e
-                    empático. Acredito que cada paciente é único e merece um atendimento personalizado.</p>
-
-                <div class="features-list">
-                    <div class="feature-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                            <polyline points="22 4 12 14.01 9 11.01" />
-                        </svg>
-                        <span><strong>CRM-PR 53.725</strong> | Pós-graduando em Psiquiatria - Hospital Israelita Albert
-                            Einstein</span>
-                    </div>
-                    <div class="feature-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                            <polyline points="22 4 12 14.01 9 11.01" />
-                        </svg>
-                        <span>Atendimento presencial e online</span>
-                    </div>
-                    <div class="feature-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                            <polyline points="22 4 12 14.01 9 11.01" />
-                        </svg>
-                        <span>Emissão de nota fiscal para reembolso</span>
-                    </div>
-                </div>
-
-                <a href="#contato" class="btn btn-primary">Agendar Consulta</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Depoimentos Section -->
-    <section class="section depoimentos" id="depoimentos">
+    <!-- Pre-Consultation Form Section -->
+    <section class="preconsulta" id="preconsulta">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Depoimentos</span>
-                <h2>O que dizem meus <span class="gradient-text">pacientes</span></h2>
+            <div class="section-header" data-animate>
+                <h2>Pré-Consulta Psiquiátrica</h2>
+                <p class="section-subtitle">Agilize seu atendimento preenchendo nosso formulário inicial</p>
             </div>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stars">
-                        ⭐⭐⭐⭐⭐
-                    </div>
-                    <p class="testimonial-text">"Depois de anos lutando contra a ansiedade, finalmente encontrei um
-                        tratamento que funciona. O Dr. Pires é atencioso, explica tudo com clareza e me ajudou a
-                        entender que buscar ajuda foi a melhor decisão que tomei."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">C</div>
-                        <div>
-                            <p class="author-name">C.R.</p>
-                            <p class="author-role">Paciente desde 2024</p>
-                        </div>
-                    </div>
+            <div class="partnership-card" data-animate>
+                <div class="partnership-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
                 </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stars">
-                        ⭐⭐⭐⭐⭐
-                    </div>
-                    <p class="testimonial-text">"O acompanhamento psiquiátrico mudou minha vida. Estava com insônia
-                        crônica e dores que nenhum exame explicava. Com o tratamento adequado e a abordagem humanizada
-                        do doutor, hoje durmo bem e recuperei minha qualidade de vida."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">M</div>
-                        <div>
-                            <p class="author-name">M.S.</p>
-                            <p class="author-role">Paciente desde 2023</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stars">
-                        ⭐⭐⭐⭐⭐
-                    </div>
-                    <p class="testimonial-text">"Profissional extremamente competente. Me senti acolhida desde a
-                        primeira consulta. O tratamento foi personalizado e respeitou meu tempo. Hoje consigo lidar com
-                        meus transtornos de humor de forma muito mais saudável."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">L</div>
-                        <div>
-                            <p class="author-name">L.F.</p>
-                            <p class="author-role">Paciente desde 2024</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section faq" id="faq">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Perguntas Frequentes</span>
-                <h2>Dúvidas <span class="gradient-text">Comuns</span></h2>
-                <p>Respostas para as perguntas mais frequentes sobre o processo terapêutico</p>
-            </div>
-
-            <div class="faq-grid">
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="faq-question">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                            <line x1="12" y1="17" x2="12.01" y2="17" />
-                        </svg>
-                        <h3>Como funciona a primeira consulta?</h3>
-                        <button class="faq-toggle" aria-label="Expandir resposta">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>A primeira consulta é um momento de acolhimento e conhecimento mútuo. Vamos conversar sobre
-                            suas demandas, histórico e expectativas. É também o momento para você tirar dúvidas sobre o
-                            tratamento e decidir se deseja continuar.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="faq-question">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                            <line x1="12" y1="17" x2="12.01" y2="17" />
-                        </svg>
-                        <h3>Quanto tempo dura cada consulta?</h3>
-                        <button class="faq-toggle" aria-label="Expandir resposta">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>A duração de cada consulta é de acordo com a necessidade individual de cada paciente. A
-                            frequência é definida em conjunto, considerando seu quadro clínico e objetivos terapêuticos.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="faq-question">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                            <line x1="12" y1="17" x2="12.01" y2="17" />
-                        </svg>
-                        <h3>Atende online ou presencial?</h3>
-                        <button class="faq-toggle" aria-label="Expandir resposta">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Ofereço atendimento tanto presencial quanto online. As consultas online são realizadas por
-                            videochamada em plataforma segura e confidencial, com a mesma qualidade e eficácia do
-                            atendimento presencial.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="faq-question">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                            <line x1="12" y1="17" x2="12.01" y2="17" />
-                        </svg>
-                        <h3>Aceita convênio ou emite nota para reembolso?</h3>
-                        <button class="faq-toggle" aria-label="Expandir resposta">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Atualmente não atendo por convênio, mas emito nota fiscal para que você possa solicitar
-                            reembolso junto ao seu plano de saúde. Entre em contato para mais informações sobre valores
-                            e formas de pagamento.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="faq-question">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                            <line x1="12" y1="17" x2="12.01" y2="17" />
-                        </svg>
-                        <h3>Quanto tempo dura a terapia?</h3>
-                        <button class="faq-toggle" aria-label="Expandir resposta">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>A duração do tratamento é de acordo com a necessidade individual de cada paciente. Algumas
-                            questões podem ser trabalhadas em poucos meses, enquanto outras requerem um acompanhamento
-                            mais longo. Você sempre terá autonomia para decidir quando encerrar o processo.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                    <div class="faq-question">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                            <line x1="12" y1="17" x2="12.01" y2="17" />
-                        </svg>
-                        <h3>Minhas informações são confidenciais?</h3>
-                        <button class="faq-toggle" aria-label="Expandir resposta">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Sim, absolutamente. O sigilo médico é garantido pelo Código de Ética Médica. Tudo o que for
-                            compartilhado nas consultas é estritamente confidencial, exceto em situações de risco
-                            iminente previstas em lei.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What to Expect Section -->
-    <section class="section what-to-expect">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Processo Terapêutico</span>
-                <h2>O que <span class="gradient-text">Esperar</span></h2>
-                <p>Entenda como funciona o processo de terapia e o que você pode esperar de cada etapa</p>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
-                    <div class="timeline-marker">
-                        <span>1</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Primeiro Contato</h3>
-                        <p>Entre em contato via WhatsApp, telefone ou e-mail. Vamos agendar sua primeira consulta em um
-                            horário que funcione para você.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-                    <div class="timeline-marker">
-                        <span>2</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Avaliação Inicial</h3>
-                        <p>Na primeira consulta, vamos conversar sobre suas demandas, histórico e expectativas. É um
-                            momento de acolhimento e conhecimento mútuo.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
-                    <div class="timeline-marker">
-                        <span>3</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Plano Terapêutico</h3>
-                        <p>Juntos, definimos objetivos e estratégias personalizadas para o seu processo. Você participa
-                            ativamente das decisões sobre sua terapia.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
-                    <div class="timeline-marker">
-                        <span>4</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Acompanhamento</h3>
-                        <p>Consultas regulares onde trabalhamos suas questões com tratamentos personalizados. Você
-                            receberá orientações e, quando necessário, prescrição médica adequada ao seu caso.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
-                    <div class="timeline-marker">
-                        <span>5</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Evolução e Alta</h3>
-                        <p>Avaliamos regularmente seu progresso. Quando você se sentir preparado e alcançar seus
-                            objetivos, planejamos juntos o encerramento do processo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pre-Consultation Section -->
-    <section id="pre-consulta" class="section bg-light">
-        <div class="container">
-            <div class="section-header text-center" data-aos="fade-up">
-                <span class="section-badge">Agilidade</span>
-                <h2>Pré-Consulta <span class="gradient-text">Psiquiátrica</span></h2>
-                <p>Agilize seu atendimento preenchendo nosso formulário inicial.</p>
-            </div>
-
-            <div class="partnership-container" data-aos="fade-up">
-                <div class="partnership-card">
-                    <div class="partnership-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="partnership-content">
+                    <h3>Formulário de Pré-Consulta</h3>
+                    <p>Para que eu possa conhecer melhor o seu caso e otimizar nosso tempo juntos, por favor, preencha
+                        este formulário antes da sua primeira consulta.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPa_645azSpricIxEfKWZXaqPXUK-tBrurJ_7Cvc6esTpOBg/viewform"
+                        target="_blank" class="btn btn-primary" style="margin-top: var(--spacing-md);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            style="width: 20px; height: 20px;">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                             <polyline points="14 2 14 8 20 8"></polyline>
                             <line x1="16" y1="13" x2="8" y2="13"></line>
                             <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
                         </svg>
+                        Preencher Formulário
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="partnerships" id="parceiros">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2>Encaminhamento e Parcerias</h2>
+                <p class="section-subtitle">Espaço exclusivo para colegas médicos e psicólogos</p>
+            </div>
+
+            <div class="partnership-card" data-animate>
+                <div class="partnership-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <line x1="20" y1="8" x2="20" y2="14"></line>
+                        <line x1="23" y1="11" x2="17" y2="11"></line>
+                    </svg>
+                </div>
+                <div class="partnership-content">
+                    <h3>Encaminhamento e Parcerias</h3>
+                    <p>Se você é profissional da saúde e deseja encaminhar pacientes para avaliação ou acompanhamento
+                        psiquiátrico, entre em contato diretamente através do nosso WhatsApp ou E-mail.</p>
+                    <div class="partnership-contact">
+                        <p><strong>WhatsApp:</strong> (43) 99964-5393</p>
+                        <p><strong>E-mail:</strong> Drviniciuspsiq@gmail.com</p>
                     </div>
-                    <div class="partnership-content">
-                        <h3>Formulário de Pré-Consulta</h3>
-                        <p>Para que eu possa conhecer melhor o seu caso e otimizar nosso tempo juntos, por favor,
-                            preencha este formulário antes da sua primeira consulta.</p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPa_645azSpricIxEfKWZXaqPXUK-tBrurJ_7Cvc6esTpOBg/viewform"
-                            target="_blank" class="btn btn-primary btn-lg">
-                            Preencher Formulário
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2>Entre em Contato</h2>
+                <p class="section-subtitle">Agende sua consulta e comece sua jornada de cuidado</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-animate>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(43) 99964-5393</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>Drviniciuspsiq@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Arapongas - PR</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horário</h4>
+                            <p>Atendimento com hora marcada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta" data-animate>
+                    <div class="cta-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Pronto para Começar?</h3>
+                        <p>Agende sua consulta agora mesmo pelo WhatsApp e dê o primeiro passo para uma vida mais
+                            equilibrada. Atendimento particular (não aceitamos convênios).</p>
+                        <a href="https://wa.me/5543999645393?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta."
+                            class="btn btn-primary" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 20px; height: 20px;">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            Agendar pelo WhatsApp
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Encaminhamento Section -->
-    <section id="encaminhamento" class="section bg-light">
-        <div class="container">
-            <div class="section-header text-center" data-aos="fade-up">
-                <span class="section-badge">Área Médica</span>
-                <h2>Encaminhamento e <span class="gradient-text">Parcerias</span></h2>
-                <p>Espaço exclusivo para colegas médicos e psicólogos.</p>
-            </div>
-
-            <div class="partnership-container" data-aos="fade-up">
-                <div class="partnership-card">
-                    <div class="partnership-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="8.5" cy="7" r="4"></circle>
-                            <line x1="20" y1="8" x2="20" y2="14"></line>
-                            <line x1="23" y1="11" x2="17" y2="11"></line>
-                        </svg>
-                    </div>
-                    <div class="partnership-content">
-                        <h3>Encaminhamento e Parcerias</h3>
-                        <p>Se você é profissional da saúde e deseja encaminhar pacientes para avaliação ou
-                            acompanhamento psiquiátrico, entre em contato diretamente através do nosso WhatsApp ou
-                            E-mail.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato Section -->
-    <section class="section contato" id="contato">
-        <div class="container">
-            <div class="contato-content" data-aos="fade-up">
-                <div class="contato-text">
-                    <span class="section-badge">Vamos Conversar</span>
-                    <h2>Pronto para dar o <span class="gradient-text">primeiro passo</span>?</h2>
-                    <p>Agende sua consulta e comece sua jornada de autoconhecimento e bem-estar emocional.</p>
-
-                    <div class="contato-info">
-                        <div class="info-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                            <div>
-                                <p class="info-label">Endereço</p>
-                                <p class="info-value">Arapongas - PR</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                            </svg>
-                            <div>
-                                <p class="info-label">WhatsApp</p>
-                                <p class="info-value">(43) 99964-5393</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                            <div>
-                                <p class="info-label">E-mail</p>
-                                <p class="info-value">Drviniciuspsiq@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contato-cta">
-                    <!-- WhatsApp CTA: 55 + 43 + 99964-5393 -->
-                    <a href="https://wa.me/5543999645393?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta."
-                        class="btn btn-primary btn-large" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg>
-                        Agendar no WhatsApp
-                    </a>
-                    <p class="cta-note">Respondo em até 24 horas</p>
-                    <p class="cta-note" style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Atendimento
-                        Particular (Não aceitamos convênios)</p>
-                </div>
-            </div>
-
-            <!-- Google Maps -->
-            <div class="map-container" data-aos="fade-up" style="margin-top: 3rem;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29384.84!2d-51.4!3d-23.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0b3b3b3b3b3%3A0x0!2sArapongas%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
-                    width="100%" height="400"
-                    style="border:0; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
             </div>
         </div>
     </section>
@@ -794,53 +484,66 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>Dr. Pires - Saúde Mental</h3>
-                    <p>Transformando vidas através do cuidado médico especializado em saúde mental.</p>
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>Dr. Vinicius Pires</span>
+                    </div>
+                    <p>Cuidando da sua saúde mental com profissionalismo e humanização.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
 
                 <div class="footer-links">
                     <h4>Links Rápidos</h4>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#especialidades">Especialidades</a>
-                    <a href="#contato">Contato</a>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                    </ul>
                 </div>
 
-                <div class="footer-social">
-                    <h4>Redes Sociais</h4>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                        </a>
-                    </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fab fa-whatsapp"></i> (43) 99964-5393</li>
+                        <li><i class="fas fa-envelope"></i> Drviniciuspsiq@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Arapongas - PR</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Dr. Pires - Saúde Mental. Todos os direitos reservados.</p>
-                <p>CRM-PR 53.725 | Emitimos nota fiscal para reembolso</p>
+                <p>&copy; 2025 Dr. Vinicius Pires - Psiquiatria & Saúde Mental. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5543999645393?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento."
+        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Cookie Banner -->
     <div class="cookie-banner" id="cookieBanner">
         <div class="cookie-content">
-            <p>🍪 Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com
-                nossa <a href="#">Política de Privacidade</a>.</p>
-            <button class="btn btn-small" onclick="acceptCookies()">Aceitar</button>
+            <p>Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa
+                política de privacidade.</p>
+            <button class="btn btn-primary btn-sm" id="acceptCookies">Aceitar</button>
         </div>
     </div>
 
-    <script src="script.js?v=1.0.1"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
