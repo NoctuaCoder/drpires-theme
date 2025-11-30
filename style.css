@@ -1135,19 +1135,22 @@ section {
 .contact-hero-cta .btn-large {
     padding: var(--spacing-md) var(--spacing-xl);
     font-size: 1.1rem;
-    background: var(--color-white);
+    background: #FFFFFF;
     color: var(--color-blue);
     border: none;
     font-weight: 600;
     gap: var(--spacing-sm);
     position: relative;
     z-index: 1;
+    transition: all 0.3s ease;
 }
 
 .contact-hero-cta .btn-large:hover {
-    background: var(--color-light);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    color: var(--color-blue-dark);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.05);
 }
 
 .cta-note {
