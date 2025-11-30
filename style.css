@@ -181,13 +181,15 @@ p {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--color-blue), var(--color-blue-light));
-    color: var(--color-light);
+    color: #FFFFFF;
     box-shadow: var(--shadow-md);
+    border: none;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(36, 71, 108, 0.3);
+    filter: brightness(1.1);
 }
 
 /* Enhanced WhatsApp SVG icon in buttons */
@@ -198,7 +200,7 @@ p {
 
 .btn-primary:hover svg {
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .btn-secondary {
@@ -1048,7 +1050,9 @@ section {
     .profile-stats {
         flex-direction: column;
     }
-}/* ===================================
+}
+
+/* ===================================
    Contact Section - New Design
    =================================== */
 .contact {
@@ -1257,7 +1261,9 @@ section {
     .contact-grid {
         grid-template-columns: 1fr;
     }
-}/* ===================================
+}
+
+/* ===================================
    Cookie Banner - Modern Design
    =================================== */
 .cookie-banner {
@@ -1354,7 +1360,9 @@ section {
         width: 100%;
         justify-content: center;
     }
-}/* ===================================
+}
+
+/* ===================================
    Floating Buttons - WhatsApp & Back to Top
    =================================== */
 
