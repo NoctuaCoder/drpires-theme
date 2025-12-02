@@ -859,6 +859,19 @@ section {
     font-size: var(--font-size-sm);
 }
 
+/* Hidden developer credit - easter egg */
+.footer-bottom p a {
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-bottom p a:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(74, 144, 226, 0.6);
+    color: var(--color-blue-light) !important;
+}
+
 /* ===================================
    Questions Section
    =================================== */
@@ -1453,9 +1466,11 @@ section {
    Mobile Responsiveness
    =================================== */
 @media (max-width: 768px) {
+
     /* Typography */
     h1 {
-        font-size: 2rem; /* Slightly smaller for better fit */
+        font-size: 2rem;
+        /* Slightly smaller for better fit */
         line-height: 1.2;
     }
 
@@ -1469,11 +1484,13 @@ section {
 
     /* Layout & Spacing */
     .container {
-        padding: 0 20px; /* Fixed padding for consistency */
+        padding: 0 20px;
+        /* Fixed padding for consistency */
     }
 
     section {
-        padding: 60px 0; /* Reduced section padding */
+        padding: 60px 0;
+        /* Reduced section padding */
     }
 
     /* Header */
@@ -1537,7 +1554,8 @@ section {
     .profile-card {
         max-width: 100%;
         margin: 0 auto;
-        padding: 24px; /* Reduced padding */
+        padding: 24px;
+        /* Reduced padding */
     }
 
     .profile-stats {
@@ -1547,7 +1565,8 @@ section {
     }
 
     .stat {
-        min-width: 80px; /* Ensure stats don't get too squashed */
+        min-width: 80px;
+        /* Ensure stats don't get too squashed */
     }
 
     /* About Section */
@@ -1637,10 +1656,11 @@ section {
         height: 140px;
     }
 
-    .stat-number, .stat-text {
+    .stat-number,
+    .stat-text {
         font-size: 1.25rem;
     }
-    
+
     .stat-label {
         font-size: 0.8rem;
     }
